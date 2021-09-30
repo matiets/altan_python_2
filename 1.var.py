@@ -9,3 +9,5 @@ myVar2 = 200 # camel-case
 z = my_var_1 + myVar2
 
 print(z)
+
+# Вызов терминала снизу - Ctrl+J
