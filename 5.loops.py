@@ -96,4 +96,4 @@ my_list = [num + 100 for num in range(10)]
 
 my_list = [num for num in range(10) if num % 2 == 0]
 
-print(my_list)
+# print(my_list)
