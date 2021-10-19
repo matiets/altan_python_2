@@ -73,11 +73,11 @@ b = 0
 
 # Пример калькулятор
 def calculate(n1, n2, op):
-    d ={
-        '+': lambda x, y: x + y
-        '-': lambda x, y: x - y
-        '*': lambda x, y: x * y
-        '/': lambda x, y: x / y
+    d = {
+        '+': lambda x, y: x + y,
+        '-': lambda x, y: x - y,
+        '*': lambda x, y: x * y,
+        '/': lambda x, y: x / y,
     }  
     return d[op](n1, n2)  
 
@@ -85,7 +85,7 @@ while True:
     # Ввод данных
     cmd = input("Командуйте, сэр: ")
     if cmd == "stop":
-        print("Bye,bye")
+        print("Bye,bye!")
         break
 
     try:
@@ -94,13 +94,13 @@ while True:
         op = input("Введите символ операции!")
 
     # Обработка данных
-    result = calculate(num_1, num_2, op)
+        result = calculate(num_1, num_2, op)
     except ZeroDivisionError:
-        result "На ноль делить нельзя")
-        continue
+        result = "На ноль делить нельзя!"
+        # continue
     except ValueError:
-        result = "Вы ввели не число"
-        continue
+        result = "Вы ввели не число!"
+        # continue
     finally:
-    # Ввод данных
-    print(f"Результат: {result}")
+        # Ввод данных
+     print(f"Результат: {result}")
